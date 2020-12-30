@@ -1,7 +1,0 @@
-<section class="home-page">
-    <h3> Name: {{user.name}} </h3>
-    <h3> Coins {{user.coins}} </h3>
-    <h3> Bitcoin Rate: {{rate}} </h3>
-    <moves-list [user]="user" ></moves-list>
-    <button *ngIf="user" (click)="logout()" >logout</button>
-</section>

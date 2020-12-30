@@ -1,9 +1,0 @@
-<section>
-    <form *ngIf="contact"  (submit)="addContact($event)">
-        <input name="name" [(ngModel)]="contact.name" type="text" />
-        <input name="phone" [(ngModel)]="contact.phone" type="text" />
-        <input name="email" [(ngModel)]="contact.email" type="email" />
-        <button>Save Contact</button>
-    </form>
-    <button (click)="removeContact()" >Delete</button>
-</section>
