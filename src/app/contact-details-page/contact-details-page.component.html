@@ -1,0 +1,12 @@
+<section *ngIf="contact"  class="contact-details">
+    <!-- <p>contact-details-page works!</p> -->
+    <h2>{{contact.name}} </h2>
+    <img [src]="'https://robohash.org/'+contact._id"  />
+    <h3>{{contact.phone}}</h3>
+    <button (click)="goBack()" >Back</button>
+    <a routerLink="edit" >
+        Edit Contact
+    </a>
+    <transfer-fund [contact]="contact" ></transfer-fund>
+    <moves-list *ngIf="user" title="Your Moves" [contact]="contact" [user]="user"></moves-list>
+</section>

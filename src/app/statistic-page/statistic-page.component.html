@@ -1,0 +1,6 @@
+<section *ngIf="marketPrice && confirmedTransactions" class="statistic-page">
+    <h2>market price</h2>
+    <chart [data]="marketPrice"></chart>
+    <h2> Confirmed Transactions Per Day </h2>
+    <chart [data]="confirmedTransactions"></chart>
+</section>

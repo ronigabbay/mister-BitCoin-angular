@@ -1,0 +1,9 @@
+<!-- <section > -->
+    <ul class="contact-list clean-list flex wrap justify-center">
+        <li class="" *ngFor="let contact of contacts; let i = index">
+            <a [routerLink]="[contact._id]" >
+                <contact-preview [contact]="contact"></contact-preview>
+            </a>
+        </li>
+    </ul>
+<!-- </section> -->
